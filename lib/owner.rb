@@ -1,7 +1,8 @@
 class Owner
 
+@@all = []
 
-  def self.all
+def self.all
 end
 
 def self.count
