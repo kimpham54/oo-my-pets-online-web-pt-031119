@@ -3,6 +3,6 @@ class Cat
   attr_reader :NAME
 
   def initialize(name)
-    @name = name
+    @NAME = name
   end
 end
