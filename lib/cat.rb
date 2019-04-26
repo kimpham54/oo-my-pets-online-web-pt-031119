@@ -1,8 +1,8 @@
 class Cat
   # attr_accessor
-  attr_reader @NAME
+  attr_reader @name
 
   def initialize(name)
-    @NAME = name
+    @name = name
   end
 end
