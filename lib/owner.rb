@@ -1,5 +1,5 @@
 class Owner
-attr_reader :species
+attr_reader :species, :name
 
 @@all = []
 
@@ -21,10 +21,6 @@ end
 
 def say_species
   puts "#I am a {species}."
-end
-
-
-def name
 end
 
 def pets
