@@ -78,7 +78,7 @@ def sell_pets
   petmood(:dogs,"nervous")
   petmood(:cats,"nervous")
   petmood(:fishes,"nervous")
-  owner.pets.clear
+  self.pets.clear
   # pets[:fishes].map do |fish|
   #   fish.mood = "nervous"
   # end
