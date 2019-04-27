@@ -7,6 +7,7 @@ attr_accessor :pets
 def initialize(species)
   @species = species
   @pets = {:fishes => [], :dogs => [], :cats => []}
+end
 
 def self.all
   @@all
