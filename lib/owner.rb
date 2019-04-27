@@ -47,9 +47,10 @@ end
 
 
 def walk_dogs()
-  pets[:dogs].map do |dog|
-    dog.mood = "happy"
-  end
+  # pets[:dogs].map do |dog|
+  #   dog.mood = "happy"
+  # end
+  petmood(:dogs,"happy")
 end
 
 def play_with_cats
