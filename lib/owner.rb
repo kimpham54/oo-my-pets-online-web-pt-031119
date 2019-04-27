@@ -33,13 +33,13 @@ def buy_fish(name)
 end
 
 
-def buy_cat
+def buy_cat(name)
   pet = Cat.new(name)
   pets[:cats].push(pet)
 
 end
 
-def buy_dog
+def buy_dog(name)
   pet = Dog.new(name)
   pets[:dogs].push(pet)
 
