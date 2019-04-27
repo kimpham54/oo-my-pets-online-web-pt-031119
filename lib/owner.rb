@@ -69,6 +69,7 @@ def petmood(pettype,mood)
   pets[pettype].map do |pet|
     pet.mood = mood
   end
+  end
 
 
 def sell_pets
