@@ -54,15 +54,17 @@ def walk_dogs()
 end
 
 def play_with_cats
-  pets[:cats].map do |cat|
-    cat.mood = "happy"
-  end
+  # pets[:cats].map do |cat|
+  #   cat.mood = "happy"
+  # end
+  petmood(:cats,"happy")
 end
 
 def feed_fish
-  pets[:fishes].map do |fish|
-    fish.mood = "happy"
-  end
+  # pets[:fishes].map do |fish|
+  #   fish.mood = "happy"
+  # end
+  petmood(:fishes,"happy")
 end
 
 def petmood(pettype,mood)
@@ -73,17 +75,20 @@ def petmood(pettype,mood)
 
 
 def sell_pets
-  pets[:fishes].map do |fish|
-    fish.mood = "nervous"
-  end
-
-    pets[:cats].map do |cat|
-      cat.mood = "nervous"
-    end
-
-      pets[:dogs].map do |dog|
-        dog.mood = "nervous"
-      end
+  petmood(:dogs,"nervous")
+  petmood(:cats,"nervous")
+  petmood(:fishes,"nervous")
+  # pets[:fishes].map do |fish|
+  #   fish.mood = "nervous"
+  # end
+  #
+  #   pets[:cats].map do |cat|
+  #     cat.mood = "nervous"
+  #   end
+  #
+  #     pets[:dogs].map do |dog|
+  #       dog.mood = "nervous"
+  #     end
 end
 
 def list_pets
