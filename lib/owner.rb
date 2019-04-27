@@ -4,8 +4,6 @@ attr_accessor :pets
 
 @@all = []
 
-def initialize
-  @pets = {:fishes => [], :dogs => [], :cats => []}
 
 def self.all
   @@all
@@ -28,6 +26,7 @@ def say_species
 end
 
 def pets
+  @pets = {:fishes => [], :dogs => [], :cats => []}
 end
 
 
