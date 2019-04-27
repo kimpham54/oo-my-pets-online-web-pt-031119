@@ -1,5 +1,5 @@
 class Owner
-
+attr_reader :species
 @@all = []
 
 def self.all
@@ -15,7 +15,7 @@ def self.reset_all
 end
 
 def species(species)
-  pet = species.new
+  @species = species
 end
 
 def say_species
