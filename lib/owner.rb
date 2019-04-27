@@ -34,9 +34,14 @@ end
 
 
 def buy_cat
+  pet = Cat.new(name)
+  pets[:cats].push(pet)
+
 end
 
 def buy_dog
+  pet = Dog.new(name)
+  pets[:dogs].push(pet)
 
 end
 
