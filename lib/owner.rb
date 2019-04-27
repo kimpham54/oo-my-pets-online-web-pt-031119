@@ -14,7 +14,8 @@ def self.reset_all
   @@all.clear
 end
 
-def species
+def species(species)
+  pet = species.new
 end
 
 def say_species
