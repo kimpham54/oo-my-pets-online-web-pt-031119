@@ -66,12 +66,15 @@ end
 def sell_pets
   pets[:fishes].map do |fish|
     fish.mood = "nervous"
+  end
 
     pets[:cats].map do |cat|
       cat.mood = "nervous"
+    end
 
       pets[:dogs].map do |dog|
         dog.mood = "nervous"
+      end
 end
 
 def list_pets
