@@ -4,6 +4,9 @@ attr_accessor :pets
 
 @@all = []
 
+def initialize(species)
+  @species = species
+  @pets = {:fishes => [], :dogs => [], :cats => []}
 
 def self.all
   @@all
@@ -17,16 +20,8 @@ def self.reset_all
   @@all.clear
 end
 
-def species(species)
-  @species = species
-end
-
 def say_species
   puts "#I am a {species}."
-end
-
-def pets
-  @pets = {:fishes => [], :dogs => [], :cats => []}
 end
 
 
