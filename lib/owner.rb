@@ -28,7 +28,7 @@ end
 
 def buy_fish(name)
   pet = Fish.new(name)
-  
+
 end
 
 
